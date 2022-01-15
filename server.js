@@ -27,6 +27,6 @@ app.use(cors());
 readdirSync("./routes").map((r) => app.use("/v1", require("./routes/" + r)));
 
 // port
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
